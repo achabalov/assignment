@@ -1,0 +1,15 @@
+.Container {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  &__form {
+    padding: 40px 80px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+    background-color: #eee;
+  }
+}

@@ -1,0 +1,44 @@
+.listAssign {
+    list-style: none;
+    display: flex;
+    border: 1px solid gray;
+    padding: 20px 40px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    &:not(:first-child) {
+        border-top: none;
+    }
+    &__description {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .listAssignColumn {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 0 15px;
+        text-align: justify;
+        width: 70vw;
+        span {
+            font-size: 1.1rem;
+        }
+        
+    }
+    
+    .completed {
+        opacity: 0.5;
+        text-decoration: line-through;
+    }
+    button {
+        height: 60px;
+        border-radius: 10px;
+        background-color: #fff;
+        
+        &:hover {
+            background-color: #a00;
+            
+        }
+    }
+}
