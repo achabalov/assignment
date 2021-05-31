@@ -1,44 +1,12 @@
 export default function reducer(state, action) {
   switch (action.type) {
     case "add":
-      console.log(state.assign);
-      if (state.assign !== undefined) {
-        return state = {
-          assign: [
-            ...state.assign,
-            {
+      return {
               title: action.payload,
               description: action.description,
               id: Date.now(),
               completed: false,
-            },
-          ]
-        }
-          //   ...state.assign,
-          //   {
-          //     title: action.payload,
-          //     description: action.description,
-          //     id: Date.now(),
-          //     completed: false,
-          //   },
-          // ]
-        // state[assign].push({
-        // title: action.payload,
-        // description: action.description,
-        // id: Date.now(),
-        // completed: false,
-      }
-
-      return (state = {
-        assign: [
-          {
-            title: action.payload,
-            description: action.description,
-            id: Date.now(),
-            completed: false,
-          },
-        ],
-      });
+            }
 
     case "remove":
       return state.filter((el) => {
